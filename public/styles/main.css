@@ -1,0 +1,433 @@
+/**
+ * Pertamina Landing Page Main Stylesheet
+ */
+
+@font-face {
+  font-family: Open Sans;
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: Open Sans Light;
+  src: url('../fonts/OpenSans-Light.ttf');
+}
+
+@font-face {
+  font-family: Open Sans Bold;
+  src: url('../fonts/OpenSans-Bold.ttf');
+}
+
+*, body {
+  font-family: Open Sans, sans-serif;
+}
+
+#plp-home {
+  padding-top: 51px;
+}
+
+#plp-home hr {
+  border: none;
+  height: 2px;
+  background-color: #ddd;
+}
+
+#plp-home .loading {
+  text-align: center;
+  font-size: 24px;
+  font-family: Open Sans Light;
+  padding: 80px 0;
+}
+
+#plp-home .parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#plp-home .parallax > div {
+  background-color: rgba(216, 28, 28, 0.8);
+  color: white;
+}
+
+#plp-home .navbar-default {
+  background-color: #ffffff;
+}
+
+#plp-home .navbar-nav {
+  margin-right: 10px;
+}
+
+#plp-home .navbar-default a {
+  text-transform: uppercase;
+}
+
+#plp-home .navbar-nav li.active > a {
+  background-color: transparent;
+  font-family: Open Sans Bold, sans-serif;
+}
+
+#plp-home .navbar-nav li > a:hover {
+  color: #d81c1c;
+}
+
+#plp-home .btn-primary {
+  background-color: #d81c1c;
+  border: none;
+}
+
+#plp-home .btn-primary:hover {
+  background-color: #ea3a3a;
+}
+
+#plp-home .navbar-brand {
+  height: auto;
+}
+
+#plp-home .navbar-brand img {
+  width: 150px;
+}
+
+#plp-home .navbar-collapse {
+  padding-top: 9px;
+}
+
+#plp-home-about h3 {
+  margin-bottom: 30px;
+}
+
+#plp-home-about p {
+  font-size: 17px;
+}
+
+#plp-home-slideshow .item {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  max-height: 618px;
+}
+
+#plp-home-slideshow .item img {
+  width: 100%;
+}
+
+#plp-home-slideshow .carousel-control {
+  opacity: 0;
+  transition: 0.2s;
+}
+
+#plp-home-slideshow:hover .carousel-control {
+  opacity: 0.9;
+}
+
+#plp-home-courses h3, #plp-home-library h3 {
+  padding-bottom: 25px;
+}
+
+#plp-home-courses .course-item, #plp-home-library .library-item {
+  color: #000000 !important; 
+  border-top-width: 4px;
+  border-top-style: solid;
+  height: 125px;
+  display: block;
+  transition: 0.1s;
+}
+
+#plp-home-courses .course-item:hover, #plp-home-library .library-item:hover {
+  background-color: #f9f9f9;
+  text-decoration: none !important;
+}
+
+#plp-home-courses .course-item h4, #plp-home-library .library-item h4 {
+  position: relative; 
+  z-index: 2;
+}
+
+#plp-home-courses .course-item .item-logo, #plp-home-library .library-item .item-logo {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  font-size: 70px;
+  color: #eeeeee;
+  z-index: 1;
+  transition: 0.1s;
+}
+
+#plp-home-courses .course-item:hover .item-logo { 
+  color: #0071bc;
+}
+
+#plp-home-library .library-item:hover .item-logo {
+  color: #bdd85f;
+}
+
+#plp-home-courses .course-item {
+  border-top-color: #0071bc;
+}
+
+#plp-home-library .library-item {
+  border-top-color: #bdd85f; 
+}
+
+/* Change this when library is done */
+#plp-home-courses {
+  margin-bottom: 30px;
+}
+
+#plp-home-contact .btn {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  transition: 0.2s;
+}
+
+#plp-home-contact .btn:hover {
+  background-color: #ffffff;
+  color: #d81c1c;
+}
+
+#plp-home-contact .phone {
+  font-size: 48px;
+  font-family: Open Sans Light, sans-serif;
+}
+
+#plp-footer .footer-logo {
+  width: 200px;
+}
+
+#plp-footer .nav a {
+  color: #d81c1c;
+}
+
+#plp-footer .nav a:hover {
+  background-color: #f3f3f3;
+}
+
+#plp-footer .copyright {
+  padding: 10px 0 25px;
+}
+
+#plp-footer .copyright p {
+  margin: 0;
+}
+
+/* ---------------------------------- */
+
+#plp-admin {
+  background: #222;
+  color: #fff;
+}
+
+#plp-admin a {
+  color: #f94a4a;
+}
+
+#plp-admin .table-hover td {
+  border-top-color: #333;
+  border-top-width: 2px;
+}
+
+#plp-admin .table-hover > tbody > tr:hover {
+  background-color: #292929;
+}
+
+#plp-admin .table-hover .btn-link {
+  color: #fff;
+}
+
+#plp-admin .login-container { 
+  margin-top: 100px;
+}
+
+#plp-admin .login-logo { 
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+#plp-admin .login-container > :first-child { 
+  margin-bottom: 50px;
+}
+
+#plp-admin #login-form { 
+  max-width: 300px;
+}
+
+#plp-admin #login-form .btn-submit {
+  padding: 10px;
+  background-color: #f94a4a;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+#plp-admin #login-form .btn-submit:hover {
+  background-color: #ff6b6b;
+}
+
+#plp-admin #login-form .form-group:last-of-type {
+  margin-top: 25px; 
+}
+
+#plp-admin .panel-right {
+  min-height: 95vh;
+  border-left: 2px solid #2d2d2d;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+#plp-admin .admin-logo {
+  width: 150px;
+}
+
+#plp-admin > .container-fluid {
+  margin-top: 20px;
+}
+
+#plp-admin #admin-nav {
+  margin-top: 20px;
+}
+
+#plp-admin #admin-nav a:not(.logout) {
+  color: #ffffff;
+}
+
+#plp-admin #admin-nav li.active a {
+  color: #ffffff;
+  background-color: #f94a4a;
+}
+
+#plp-admin #admin-nav a:hover {
+  background-color: #2f2f2f;
+}
+
+#plp-admin .panel-default {
+  background-color: #2d2d2d;
+  border-color: #202020;
+}
+
+#plp-admin .modal {
+  color: #333;
+}
+
+#plp-admin .copyright {
+  margin: 15px;
+  font-size: 11px;
+}
+
+#plp-admin .main-title {
+  margin-bottom: 30px;
+}
+
+#plp-admin .main-title h1 {
+  font-family: Open Sans Light;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#plp-admin .file-input .file-input-hidden {
+  display: none;
+}
+
+#plp-admin .file-input .file-input-preview {
+  overflow-x: hidden;
+}
+
+#panel-dashboard > h1 {
+  font-family: Open Sans Light;
+  font-size: 26px;
+}
+
+#panel-dashboard .panel-default > a.panel-body {
+  display: block;
+  color: #fff;
+}
+
+#panel-dashboard .panel-container {
+  margin-top: 30px;
+}
+
+#panel-dashboard .panel-default {
+  transition: 0.2s;
+}
+
+#panel-dashboard .panel-default:hover {
+  background-color: #333333;
+}
+
+#panel-dashboard .panel-default > a.panel-body:hover {
+  text-decoration: none;
+}
+
+#panel-dashboard .panel-default .figure {
+  font-size: 70px;
+  display: block;
+  padding: 10px 0 15px;
+  color: #444;
+  transition: 0.2s;
+}
+
+#panel-dashboard .panel-default:hover .figure {
+  color: #f94a4a;
+}
+
+#panel-slideshow .slide .thumbnail {
+  position: relative;
+}
+
+#panel-slideshow .slide .thumbnail img {
+  height: 150px;
+}
+
+#panel-slideshow .slide .thumbnail .thumbnail-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background: rgba(3,3,3,0.7);
+  text-align: center;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+#panel-slideshow .slide .thumbnail:hover .thumbnail-cover {
+  opacity: 1;
+}
+
+#panel-slideshow .slide .thumbnail .btn-toolbar {
+  margin: 60px 0;
+  display: inline-block;
+}
+
+#modal-add-slide .file-input-preview {
+  margin-bottom: 10px;
+}
+
+#modal-add-slide .file-input-preview img {
+  height: 300px;
+}
+
+#panel-parallax .file-input-preview {
+  border-radius: 5px;
+  margin: 10px 0;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#panel-config .form-group:not(:last-child) {
+  border-bottom: 2px solid #333;
+  padding-bottom: 20px;
+}
+
+#panel-config .file-input-logo .file-input-preview {
+  margin: 10px 0;
+  background: #fff;
+  border-radius: 5px;
+  padding: 25px;
+}
+
+#panel-config .file-input-logo img {
+  width: 300px;
+}
